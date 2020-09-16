@@ -23,18 +23,36 @@ body {
         }
         .search {
             margin-right: 29px;
-            &_link {
-
+            &_input {
+                position: absolute;
+                width: 280px;
+                height: 35px;
+                border: 1px solid rgba(30, 34, 64, 0.35);
+                padding: 0 20px;
+                margin-top: -7px;
+                transform: translateX(-95%);
+                z-index: 9;
                 &_active {
-                    // display: none;
-                    position: absolute;
-                    width: 280px;
-                    height: 35px;
-                    border: 1px solid rgba(30, 34, 64, 0.35);
-                    padding: 0 20px;
-                    margin-top: -7px;
-                    transform: translateX(-95%);
-                    z-index: 9;
+                    animation: move .5s forwards;
+                }
+                @keyframes move {
+                    from {
+                        width: 0;
+                    }
+                    to { 
+                        width: 280px;
+                    }  
+                }
+                &_no-active {
+                    animation: rever .5s forwards; 
+                }
+                @keyframes rever {
+                    from {
+                        width: 280px;
+                    }
+                    to { 
+                        width: 20px;
+                    }  
                 }
             }
         }

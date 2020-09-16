@@ -1,13 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
     'use strict';
 
-    // let gridItem = document.getElementById('catalog-grid').children,
-    //     textItem = document.getElementById('catalog-text').children;
+    let searchIcon = document.querySelector('.search_icon'),
+        searchInput = document.querySelector('.search_input');
+    // console.log(searchIcon);
 
-    // console.log(textItem);
+    
+    function searchInputHiding() {
+        searchInput.style.display = 'none';
+    }
+    searchInputHiding();
 
-    // for (let i = 0; i < gridItem.length; i++) {
-    //     gridItem[i].innerHTML = textItem[i].innerHTML;
-    // }
+    searchIcon.addEventListener('click', function() {
+        if (searchInput.style.display == 'inline-block') {
+            searchInput.classList.remove('search_input_active');
+            searchInput.classList.add('search_input_no-active');
 
+            setTimeout(searchInputHiding, 500);
+        } else {
+            searchInput.style.display = 'inline-block';
+            searchInput.classList.remove('search_input_no-active');
+            searchInput.classList.add('search_input_active');
+        }
+
+    });
 }); 

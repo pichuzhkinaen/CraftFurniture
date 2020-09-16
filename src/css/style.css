@@ -42,7 +42,7 @@ body {
   margin-right: 29px;
 }
 
-.nav .icons .search_link_active {
+.nav .icons .search_input {
   position: absolute;
   width: 280px;
   height: 35px;
@@ -52,6 +52,52 @@ body {
   -webkit-transform: translateX(-95%);
           transform: translateX(-95%);
   z-index: 9;
+}
+
+.nav .icons .search_input_active {
+  -webkit-animation: move .5s forwards;
+          animation: move .5s forwards;
+}
+
+@-webkit-keyframes move {
+  from {
+    width: 0;
+  }
+  to {
+    width: 280px;
+  }
+}
+
+@keyframes move {
+  from {
+    width: 0;
+  }
+  to {
+    width: 280px;
+  }
+}
+
+.nav .icons .search_input_no-active {
+  -webkit-animation: rever .5s forwards;
+          animation: rever .5s forwards;
+}
+
+@-webkit-keyframes rever {
+  from {
+    width: 280px;
+  }
+  to {
+    width: 20px;
+  }
+}
+
+@keyframes rever {
+  from {
+    width: 280px;
+  }
+  to {
+    width: 20px;
+  }
 }
 
 .logo {
