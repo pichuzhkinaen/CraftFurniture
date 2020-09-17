@@ -173,7 +173,7 @@ body {
   margin-top: 25px;
 }
 
-.header_text .items {
+.header_text .brand-items {
   width: 330px;
   height: 50px;
   background: url("../icon/hashtag.png") left no-repeat;
@@ -182,7 +182,7 @@ body {
   margin: 30px 0 43px 0;
 }
 
-.header_text .items_text {
+.header_text .brand-items_text {
   font-weight: 500;
   line-height: 108.5%;
   letter-spacing: 0.05em;
@@ -191,12 +191,12 @@ body {
   margin-left: 50px;
 }
 
-.header_text .items_text::after {
+.header_text .brand-items_text::after {
   content: "\276F";
   margin-left: 89px;
 }
 
-.header_text .items_text:hover {
+.header_text .brand-items_text:hover {
   color: #5364FE;
 }
 
@@ -337,31 +337,22 @@ body {
 }
 
 .new-items .items_count {
-  font-weight: bold;
-  font-size: 4.5em;
   color: rgba(31, 35, 71, 0.29);
-  margin-top: 70px;
-  -webkit-transform: translateX(250px);
-          transform: translateX(250px);
+  text-align: end;
+  margin: -80px 150px 0 0;
+  cursor: default;
 }
 
-.new-items .items_count::before {
-  content: "\FF1C";
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #1f2347;
-  vertical-align: middle;
-  margin-right: 5px;
+.new-items .items_count-text {
+  font-weight: bold;
+  font-size: 4.5em;
+}
+
+.new-items .items_count-prev {
   cursor: pointer;
 }
 
-.new-items .items_count::after {
-  content: "\FF1E";
-  font-size: 1.2rem;
-  font-weight: 400;
-  color: #1f2347;
-  vertical-align: middle;
-  margin-left: 5px;
+.new-items .items_count-next {
   cursor: pointer;
 }
 

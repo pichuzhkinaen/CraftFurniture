@@ -59,6 +59,7 @@ body {
 
     }
 }
+
 .logo {
     font-weight: 900;
     font-size: 1.9em;
@@ -66,6 +67,7 @@ body {
     text-decoration: none;
     color: #343967;
 }
+
 .menu {
     display: flex;
     justify-content: space-around;
@@ -83,6 +85,7 @@ body {
         }
     }
 }
+
 .header {
     display: flex;
     margin-top: 46px;
@@ -117,7 +120,7 @@ body {
             color: #1E2240;
             margin-top: 25px;
         }
-        .items {
+        .brand-items {
             width: 330px;
             height: 50px;
             background: url('../icon/hashtag.png') left no-repeat;
@@ -160,6 +163,7 @@ body {
         margin: 20% 0 0 30%;
     }
 }
+
 .title {
     position: absolute;
     font-weight: 900;
@@ -186,6 +190,7 @@ body {
         }
     }
 }
+
 .subtitle {
     font-size: 1.5em;
     font-weight: bold;
@@ -194,6 +199,7 @@ body {
     color: #343967;
     margin-top: 32px;
 }
+
 .btn {
     width: 229px;
     height: 49px;
@@ -213,6 +219,7 @@ body {
         margin-top: 30px;
     }
 }
+
 .new-items {
     margin-top: 81px;
     .items {
@@ -253,28 +260,20 @@ body {
             width: 100%;
         }
         &_count {
-            font-weight: bold;
-            font-size: 4.5em;
             color: rgba(31, 35, 71, 0.29);
-            margin-top: 70px;
-            transform: translateX(250px);
-            &::before {
-                content: "\FF1C";
-                font-size: 1.2rem;
-                font-weight: 400;
-                color: rgb(31, 35, 71);
-                vertical-align: middle;
-                margin-right: 5px;
-                cursor: pointer;
+            text-align: end;
+            margin: -80px 150px 0 0;
+            cursor: default;
+            &-text {
+                font-weight: bold;
+                font-size: 4.5em;
             }
-            &::after {
-                content: "\FF1E";
-                font-size: 1.2rem;
-                font-weight: 400;
-                color: rgb(31, 35, 71);
-                vertical-align: middle;
-                margin-left: 5px;
-                cursor: pointer;
+            &-prev {
+               cursor: pointer;
+
+            }
+            &-next {
+              cursor: pointer;  
             }
         }
         &_next-page {
@@ -282,6 +281,7 @@ body {
         }
     }
 }
+
 .catalog {
     font-size: 2.25em;
     font-weight: bold;
@@ -343,6 +343,7 @@ body {
             "photo1 photo3 photo4";
     }
 }
+
 .our-company {
     padding: 53px 217px 0 217px;
     &_items {
@@ -382,6 +383,7 @@ body {
         }
     }
 }
+
 .contact {
     margin-top: 72px;
     &-inner {
@@ -410,6 +412,7 @@ body {
         }
     }
 }
+
 .footer {
     display: flex;
     justify-content: space-between;
