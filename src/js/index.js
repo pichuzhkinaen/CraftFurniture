@@ -30,7 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
         next = document.querySelector('.items_count-next'),
         count = document.querySelector('.items_count-text'),
         items = document.querySelectorAll('.items'),
-        itemsNext = document.querySelectorAll('.items_next-page'),
         countCurrentPage = 1;
 
         prev.addEventListener('click', switchItems); 
@@ -77,4 +76,14 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     }
 
+
+    //гамбургер-меню
+    const menu = document.querySelector('.menu-main'),
+        hamburger = document.querySelector('.hamburger');
+
+    hamburger.addEventListener('click', function() {
+        hamburger.classList.toggle('hamburger_active');
+        menu.classList.toggle('menu-main_active');
+    });
+    
 }); 
