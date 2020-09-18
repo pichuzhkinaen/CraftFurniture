@@ -246,22 +246,26 @@
     -webkit-transform: translateY(3px) rotate(45deg);
             transform: translateY(3px) rotate(45deg);
   }
-  .header {
-    display: block;
-  }
   .header .background {
-    width: 90%;
-    height: 488px;
+    width: 250px;
   }
   .header_text {
-    margin-top: 50px;
+    margin-left: 30px;
   }
-  .header .circle-bg {
-    margin: -200% 0 0 80%;
+  .header_text .brand-items {
+    width: 220px;
+    background-size: 10%;
+  }
+  .header_text .brand-items_text {
+    font-size: 0.9em;
+    margin-left: 30px;
+  }
+  .header_text .brand-items_text::after {
+    margin-left: 20px;
   }
   .title {
-    font-size: 2.3rem;
-    margin-left: 35px;
+    font-size: 2.2rem;
+    margin-left: 3em;
   }
   .title-accent {
     margin-left: 0;
@@ -273,11 +277,15 @@
   .title_h2-accent {
     font-size: 1.8rem;
   }
+  .new-items {
+    margin-top: 40px;
+  }
   .new-items .items {
     -ms-grid-rows: 0.7fr 0.7fr 0.7fr 0.7fr;
         grid-template-rows: 0.7fr 0.7fr 0.7fr 0.7fr;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
+    margin-top: 20px;
   }
   .new-items .items .cell1 {
     -ms-grid-row: 2;
@@ -309,6 +317,9 @@
   .catalog {
     padding: 0 50px;
   }
+  .our-company {
+    margin-top: 40px;
+  }
   .our-company_items .item .circle {
     width: 100px;
     height: 100px;
@@ -317,6 +328,9 @@
   }
   .our-company_items .item .text {
     font-size: 0.9em;
+  }
+  .contact {
+    margin-top: 40px;
   }
   .contact-inner .map iframe {
     width: 500px;
@@ -329,6 +343,12 @@
   }
   .footer .menu {
     width: 70%;
+  }
+}
+
+@media (min-width: 576px) {
+  .hamburger {
+    top: 15%;
   }
 }
 /*# sourceMappingURL=media.css.map */
